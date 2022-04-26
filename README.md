@@ -2,3 +2,4 @@
 
 ### Project description:
 TODO
+edit README.md and pom.xml to include project name, version etc.
