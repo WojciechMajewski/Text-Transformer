@@ -1,5 +1,4 @@
 ## Software Engineering Sprint Project no. 1
 
 ### Project description:
-TODO
-edit README.md and pom.xml to include project name, version etc.
+Our Text Transformer application will allow you to transform text data (e.g. change case, eliminate duplicates, etc.). The application will be available via GUI as well as remote API, thanks to which it will be possible to integrate it with existing tools.
