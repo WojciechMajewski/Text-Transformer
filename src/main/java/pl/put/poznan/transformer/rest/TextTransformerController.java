@@ -18,6 +18,7 @@ public class TextTransformerController {
                               @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
 
         // log the parameters
+        logger.debug("GET-type request:");
         logger.debug(text);
         logger.debug(Arrays.toString(transforms));
 
@@ -31,6 +32,7 @@ public class TextTransformerController {
                       @RequestBody String[] transforms) {
 
         // log the parameters
+        logger.debug("POST-type request:");
         logger.debug(text);
         logger.debug(Arrays.toString(transforms));
 
@@ -38,9 +40,6 @@ public class TextTransformerController {
         TextTransformer transformer = new TextTransformer(transforms);
         return transformer.transform(text);
     }
-
-
-
 }
 
 
