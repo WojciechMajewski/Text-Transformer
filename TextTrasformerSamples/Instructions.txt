@@ -1,0 +1,7 @@
+WORKING INPUT IN TEXT FORMAT:
+curl http://localhost:8080/abcde?transforms=upper
+curl http://localhost:8080/abcde?transforms=uppercase
+
+INPUT IN JSON FORMAT (navigate to the folder with the file):
+curl -X POST -H "Content-Type: application/json" -d @JSONsample.json http://localhost:8080/abCDe
+curl -X POST -H "Content-Type: application/json" -d @sampleUPPERCASE.txt http://localhost:8080/abCDe
