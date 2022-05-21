@@ -16,16 +16,16 @@ public class Capitalized extends SizeModifier{
             {
                 if(check)
                 {
-                    done = done+upper(splited[i]);
+                    done = done + splited[i].toUpperCase();
                     check = false;
                 }
                 else{
-                    done = done+lower(splited[i]);
+                    done = done + splited[i].toLowerCase();
                 }
             }
             else
             {
-                done = done+splited[i];
+                done = done + splited[i];
                 check = true;
             }
         }

@@ -1,5 +1,7 @@
 package pl.put.poznan.transformer.logic;
 
+import java.util.Locale;
+
 public class Inverse extends DecoratedTextTransformer{
     private String text;
     public Inverse(TextTransformer TT){
@@ -16,10 +18,10 @@ public class Inverse extends DecoratedTextTransformer{
                 letter = a.charAt(a.length()-i-1);
                 if(Character.isUpperCase(letter))
                 {
-                    done = done+upper(letters[i]);
+                    done = done + letters[i].toUpperCase();
                 }
                 else{
-                    done = done+lower(letters[i]);
+                    done = done + letters[i].toLowerCase();
                 }
             }
             
