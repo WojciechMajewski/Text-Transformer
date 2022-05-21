@@ -4,7 +4,7 @@ public class Lower extends SizeModifier{
     private String text;
     public Lower(TextTransformer TT){
         this.text = TT.getText();
-        return(a.toLowerCase());
+        this.text = this.text.toLowerCase();
     }
     @Override
     public String getText(){
