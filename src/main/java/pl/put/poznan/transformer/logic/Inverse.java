@@ -31,6 +31,7 @@ public class Inverse extends DecoratedTextTransformer{
         this.text = done;
         
     }
+    
     @Override
     public String getText(){
 
