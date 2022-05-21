@@ -7,6 +7,7 @@ Our Text Transformer application will allow you to transform text data (e.g. cha
 - upper (Uppercase)
 - lower (Lowercase)
 - inverse (Inverse)
+- capital (Capitalize)
 - numtotext (Numbers to text)
 - acrtoword (Acronyms to words)
 - wordtoacr (Words to acronyms)
