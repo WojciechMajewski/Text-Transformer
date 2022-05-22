@@ -73,38 +73,27 @@
     <build>
         <plugins>
 		<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-dependency-plugin</artifactId>
-    <executions>
-        <execution>
-            <id>copy-dependencies</id>
-            <phase>prepare-package</phase>
-            <goals>
-                <goal>copy-dependencies</goal>
-            </goals>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>3.1.1</version>
+
             <configuration>
-                <outputDirectory>
-                    ${project.build.directory}/libs
-                </outputDirectory>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
             </configuration>
-        </execution>
-    </executions>
-</plugin>
-		<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-jar-plugin</artifactId>
-    <configuration>
-        <archive>
-            <manifest>
-                <addClasspath>true</addClasspath>
-                <classpathPrefix>libs/</classpathPrefix>
-                <mainClass>
-                    com.baeldung.executable.ExecutableMavenJar
-                </mainClass>
-            </manifest>
-        </archive>
-    </configuration>
-</plugin>
+
+            <executions>
+                <execution>
+                    <id>make-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+
+        </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

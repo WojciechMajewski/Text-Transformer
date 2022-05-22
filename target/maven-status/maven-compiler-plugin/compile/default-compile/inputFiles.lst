@@ -1,3 +1,20 @@
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/logic/TextTransformer.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/rest/TextTransformerController.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\Lower.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\AcronymsToWords.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\Inverse.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\Capitalized.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\CaesarCipher.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\TextTransformerRunner.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\NumbersToText.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\DuplicatesElimination.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\WordsToAcronyms.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\Convert.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\DecoratedTextTransformer.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\TextTransformer.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\Upper.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\rest\InputData.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\app\TextTransformerApplication.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\RomanToArabic.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\PlainTextTransformer.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\SizeModifier.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\rest\TextTransformerController.java
+C:\Users\Wojciech\Documents\GitHub\Text-Transformer\src\main\java\pl\put\poznan\transformer\logic\SpecialSings.java
