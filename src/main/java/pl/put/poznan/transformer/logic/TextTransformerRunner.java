@@ -33,6 +33,10 @@ public class TextTransformerRunner {
                 pTT = new SpecialSings(pTT);
             } else if(transformation.equals("dupeli")){
                 pTT = new DuplicatesElimination(pTT);
+            } else if(transformation.equals("romtoara")){
+                pTT = new RomanToArabic(pTT);
+            } else if(transformation.equals("caesar")){
+                pTT = new CaesarCipher(pTT);
             }
         }
         return pTT.getText();
