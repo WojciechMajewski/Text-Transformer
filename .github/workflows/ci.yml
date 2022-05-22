@@ -12,7 +12,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Validate, build and run tests
-        run: mvn --batch-mode --update-snapshots package
+        run: mvn clean --batch-mode --update-snapshots package
       - name: Deploy JavaDoc 🚀
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
         with:
