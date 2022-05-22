@@ -1,5 +1,5 @@
 ## Text Transformer
-
+![example workflow](https://github.com/WojciechMajewski/Text-Transformer/actions/workflows/ci.yml/badge.svg)
 ### Project description:
 Our Text Transformer application will allow you to transform text data (e.g. change case, eliminate duplicates, etc.). The application will be available via GUI as well as remote API, thanks to which it will be possible to integrate it with existing tools.
 
@@ -13,5 +13,3 @@ Our Text Transformer application will allow you to transform text data (e.g. cha
 - wordtoacr (Words to acronyms)
 - specsign (Special signs)
 - dupeli (Duplicates elimination)
-
-![example workflow](https://github.com/WojciechMajewski/Text-Transformer/actions/workflows/ci.yml/badge.svg)
