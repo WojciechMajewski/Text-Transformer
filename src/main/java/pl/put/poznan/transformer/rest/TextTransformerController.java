@@ -9,12 +9,12 @@ import java.util.Arrays;
 
 
 @RestController
-@RequestMapping("/{text}")
+@RequestMapping("/")
 public class TextTransformerController {
 
     private static final Logger logger = LoggerFactory.getLogger(TextTransformerController.class);
 
-    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/{text}", method = RequestMethod.GET, produces = "application/json")
     public String get(@PathVariable String text,
                               @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
 
@@ -23,23 +23,33 @@ public class TextTransformerController {
         logger.debug(text);
         logger.debug(Arrays.toString(transforms));
 
-        // perform the transformation, you should run your logic here, below is just a silly example
         TextTransformerRunner transformer = new TextTransformerRunner(transforms);
         return transformer.transform(text);
     }
 
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public String post(@PathVariable String text,
-                      @RequestBody String[] transforms) {
+    @RequestMapping(value = "/{text}", method = RequestMethod.POST, produces = "application/json")
+    public String postFile(@PathVariable String text,
+                           @RequestBody String[] transformations) {
 
         // log the parameters
         logger.debug("POST-type request:");
         logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
+        logger.debug(Arrays.toString(transformations));
 
-        // perform the transformation, you should run your logic here, below is just a silly example
-        TextTransformerRunner transformer = new TextTransformerRunner(transforms);
+        TextTransformerRunner transformer = new TextTransformerRunner(transformations);
         return transformer.transform(text);
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.POST, produces = "application/json")
+    public String post(@RequestBody InputData inputData) {
+
+        // log the parameters
+        logger.debug("POST-type request:");
+        logger.debug(inputData.getText());
+        logger.debug(Arrays.toString(inputData.getTransformations()));
+
+        TextTransformerRunner transformer = new TextTransformerRunner(inputData.getTransformations());
+        return transformer.transform(inputData.getText());
     }
 }
 
