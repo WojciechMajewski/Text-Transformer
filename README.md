@@ -13,3 +13,5 @@ Our Text Transformer application will allow you to transform text data (e.g. cha
 - wordtoacr (Words to acronyms)
 - specsign (Special signs)
 - dupeli (Duplicates elimination)
+
+![example workflow](https://github.com/WojciechMajewski/Text-Transformer/actions/workflows/ci.yml/badge.svg)
