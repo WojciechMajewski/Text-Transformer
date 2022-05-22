@@ -13,3 +13,9 @@ jobs:
           cache: maven
       - name: Validate, build and run tests
         run: mvn --batch-mode --update-snapshots verify
+      - name: Deploy Javadoc
+        uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
+        with:
+          java-version: '11'
+          javadoc-branch: 'main'
+          target-folder: 'javadoc'
