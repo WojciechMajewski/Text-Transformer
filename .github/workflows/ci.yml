@@ -11,8 +11,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           cache: maven
+      - name: Run the Maven verify phase
+        run: mvn --batch-mode --update-snapshots verify
       - name: Validate, build and run tests
-        run: mvn clean package
+        run: mvn package
       - name: Deploy JavaDoc 🚀
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
         with:
