@@ -2,8 +2,18 @@ package pl.put.poznan.transformer.logic;
 
 import java.util.Locale;
 
+/**
+ * A class for reversing the text
+ */
+
 public class Inverse extends DecoratedTextTransformer{
     private String text;
+    
+    /**
+     * Reverse the sequence of characters, retaining the case of letters in specific positions
+     * @param TT
+     */
+    
     public Inverse(TextTransformer TT){
         this.text = TT.getText();
         String[] c = (this.text).split(" ");
