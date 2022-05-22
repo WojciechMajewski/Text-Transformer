@@ -17,5 +17,5 @@ jobs:
         uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.4
         with:
           java-version: '11'
-          javadoc-branch: 'main'
-          target-folder: 'javadoc'
+          javadoc-branch: main
+          target-folder: .
