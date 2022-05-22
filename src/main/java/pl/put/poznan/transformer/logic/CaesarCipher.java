@@ -15,10 +15,10 @@ public class CaesarCipher extends DecoratedTextTransformer{
     public CaesarCipher(TextTransformer TT){
         this.text = TT.getText();
         String cipherText = "";
-        String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+        String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String preshift = text.replaceAll("\\D+", "");
         Integer shift = Integer.parseInt(preshift);
-        shift = shift%53;
+        shift = shift%52;
         String plainText = text.replaceAll("[0-9]", "");
         for (int i = 0; i < plainText.length(); i++) {
             char ch = plainText.charAt(i);
