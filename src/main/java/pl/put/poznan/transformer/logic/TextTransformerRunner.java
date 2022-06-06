@@ -35,8 +35,10 @@ public class TextTransformerRunner {
                 pTT = new DuplicatesElimination(pTT);
             } else if(transformation.equals("romtoara")){
                 pTT = new RomanToArabic(pTT);
-            } else if(transformation.equals("caesar")){
+            } else if(transformation.equals("caesarCipher")){
                 pTT = new CaesarCipher(pTT);
+            } else if(transformation.equals("caesarDecipher")){
+                pTT = new CaesarDecipher(pTT);
             }
         }
         return pTT.getText();
