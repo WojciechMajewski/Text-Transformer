@@ -32,4 +32,6 @@ Submit text to transform and transformation sequence inside .json or .txt file (
 - specsign (Special signs)
 - dupeli (Duplicates elimination)
 - romtoara (RomanToArabic)
-- caesar (CaesarCipher)
+- caesarCipher (CaesarCipher)
+- caesarDecipher (CaesarDecipher)
+- viewStats (View statistics)
