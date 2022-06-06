@@ -1,5 +1,8 @@
 package pl.put.poznan.transformer.logic;
 
+/**
+* Class for converting float numbers into text
+*/
 public class NumbersToText extends Convert{
     private String text = "";
     private String input_text;
@@ -10,13 +13,20 @@ public class NumbersToText extends Convert{
     private String tens[] = {"", "ten", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ", "ninety "};
     private String hundreds[] = {"", "one hundred ", "two hundred ", "three hundred ", "four hundred ", "five hundred ", "six hundred ", "seven hundred ", "eight hundred ", "nine hundred "};
 
+    /**
+    * Class constructor, calls extractNumbers() function
+    * @param TT
+    */
     public NumbersToText(TextTransformer TT){
         this.input_text = TT.getText();
         //this.chars = input_text.toCharArray();
         this.words = input_text.split(" ");
         extractNumbers();
     }
-
+    
+    /**
+    * Function which extracts numbers from text and for each calls function numberName()
+    */
     public void extractNumbers(){
 
         for(String w : words){
@@ -45,6 +55,11 @@ public class NumbersToText extends Convert{
         }
         this.text = text.trim();
     }
+    
+    /**
+    * Function which converts given number in the text in english
+    * @param number
+    */
     public void numberName(String number){
         String[] str_number;
         str_number = number.split("\\.");

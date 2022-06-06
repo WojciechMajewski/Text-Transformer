@@ -1,7 +1,17 @@
 package pl.put.poznan.transformer.logic;
 
+/**
+ * A class for capitalizing each word in a text
+ */
+
 public class Capitalized extends SizeModifier{
     private String text;
+    
+    /**
+     * Capitalizes each word in a text
+     * @param TT
+     */
+    
     public Capitalized(TextTransformer TT){
         this.text = TT.getText();
         String[] splited = this.text.split("", -1);

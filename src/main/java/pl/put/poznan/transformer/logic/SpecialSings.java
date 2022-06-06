@@ -2,6 +2,12 @@ package pl.put.poznan.transformer.logic;
 
 public class SpecialSings extends Convert{
     private String text;
+    
+    /**
+     * class constructor
+     * setting text field to text taken from another TextTransformer class but converted to be supported by Latex
+     * @param TT TextTransformer class with text field to be converted
+     */
     public SpecialSings(TextTransformer TT){
         this.text = TT.getText();
         String newText = "";

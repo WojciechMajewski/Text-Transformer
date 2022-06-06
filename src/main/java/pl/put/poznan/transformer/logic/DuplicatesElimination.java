@@ -1,7 +1,17 @@
 package pl.put.poznan.transformer.logic;
 
+/**
+ * A class for eliminating repetitive words
+ */
+
 public class DuplicatesElimination extends DecoratedTextTransformer{
     private String text;
+    
+     /**
+     * Eliminate repetitive words in the immediate vicinity
+     * @param TT
+     */
+    
     public DuplicatesElimination(TextTransformer TT){
         this.text = TT.getText();
         String[] c = (this.text).split(" ");
