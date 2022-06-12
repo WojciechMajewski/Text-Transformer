@@ -39,6 +39,8 @@ public class TextTransformerRunner {
                 pTT = new CaesarCipher(pTT);
             } else if(transformation.equals("caesarDecipher")){
                 pTT = new CaesarDecipher(pTT);
+            } else if(transformation.equals("viewStats")) {
+                pTT = new ViewStats(pTT);
             }
         }
         return pTT.getText();
