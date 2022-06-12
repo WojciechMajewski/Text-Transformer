@@ -12,7 +12,7 @@ public class AcronymsToWords extends Convert{
         String text = TT.getText();
         String[] acronims = {"yolo", "vip", "tba", "rip", "p.s.", "imo", "fyi", "faq", "eta", "prof.", "dr.", "diy", "btw", "dob", "ad", "bc", "aka", "asap", "brb"};
         String[] fullWords = {"you only live once", "very important person", "to be announced", "rest in peace", "post scriptum", "in my opinion", "for your information", "frequently asked questions", "estimated time of arrival", "profesor", "doctor", "do it yourself", "by the way", "date of birth", "anno domini", "before christ", "also known as", "as soon as possible", "be right back"};
-        String[] acronimsUpper = fullWords.clone();
+        String[] acronimsUpper = acronims.clone();
         for(int i = 0; i< acronimsUpper.length; i++)
         {
             acronimsUpper[i] = acronimsUpper[i].toUpperCase();
