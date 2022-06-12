@@ -5,7 +5,7 @@ package pl.put.poznan.transformer.logic;
  */
 
 public class Lower extends SizeModifier{
-    private String text;
+    private String text="";
     
     /**
      * Modify the case of letters to lower case
